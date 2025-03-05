@@ -28,11 +28,7 @@ We compress the data set into a mat format file, which includes the following co
 * valid: index of validation set points.
 * test: index of test set points.
 
-In addition, we also sample the positive and negative edges in the network, and divide them into training, validation and test fields for recommendations.
+In addition, we also sample the positive and negative edges in the network, and divide them into training, validation, and test fields for recommendations.
 
-## Usage
+## Notice
 First, you need to choose the specific dataset for recommendation tasks in `Recommendation.py`. Second, you need to modify the number of weights in `Model.py`. The number of weights should be the number of sub-networks after decoupling. Finally, you need to determine the sub-network and the number of sub-networks in `Decoupling_matrix_aggregation.py`. Commonly hyperparameters can be reset in `args.py`. `relation_chain.py` and `rc_aware_encoder.py` construct the relation chains and the relation chain-aware encoder in DCMGNN that captures the relation sequence, and the correlations and dependencies between different auxiliary relations and the target relations, respectively.
-
-Execute the following command to run the recommendation task:
-
-* `python Recommendation.py`

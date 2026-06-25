@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+checkpoints/
+runs/
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.pt
+*.pth
+*.ckpt
+*.tmp
+*.bak
